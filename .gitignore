@@ -7,7 +7,7 @@ __pycache__/
 venv/
 env/
 
-# SQLite DB (optional - uncomment if you want DB not in VCS)
+# SQLite DB
 reminders.db
 
 # Editor files
