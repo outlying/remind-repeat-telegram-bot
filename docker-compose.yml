@@ -7,8 +7,6 @@ services:
       dockerfile: Dockerfile
     container_name: remind_repeat_bot
     restart: unless-stopped
-    env_file:
-      - .env
     environment:
       # You can override START_CMD here or in .env
       - START_CMD=${START_CMD}
