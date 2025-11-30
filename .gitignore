@@ -1,0 +1,17 @@
+# Ignore environment file with secrets
+.env
+
+# Python cache and virtualenv
+__pycache__/
+*.py[cod]
+venv/
+env/
+
+# SQLite DB (optional - uncomment if you want DB not in VCS)
+reminders.db
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+
