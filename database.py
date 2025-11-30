@@ -22,6 +22,14 @@ class Database:
                     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
                 )
             ''')
+            conn.execute('''
+                CREATE INDEX IF NOT EXISTS idx_reminders_user_id
+                ON reminders(user_id)
+            ''')
+            conn.execute('''
+                CREATE INDEX IF NOT EXISTS idx_reminders_created_at
+                ON reminders(created_at)
+            ''')
             conn.commit()
 
     def add_reminder(self, user_id: int, chat_id: int, message: str,
